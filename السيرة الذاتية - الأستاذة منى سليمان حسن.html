@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أستاذة منى سليمان حسن | باحث قانوني</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Cairo & Tajawal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#0f172a',
+                            900: '#0b1329',
+                            950: '#050b18',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                        tajawal: ['Tajawal', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f8fafc;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        /* Custom Styles for Print PDF */
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background-color: #fff !important;
+                color: #000 !important;
+            }
+            .print-border {
+                border: 1px solid #ddd !important;
+                box-shadow: none !important;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body class="text-slate-800 bg-slate-50 antialiased selection:bg-gold-500 selection:text-white">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-navy-950/90 backdrop-blur-md border-b border-slate-800 text-white no-print">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center space-x-3 space-x-reverse">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-tr from-gold-600 to-gold-400 flex items-center justify-center text-navy-950 font-bold text-xl shadow-lg">
+                        م
+                    </div>
+                    <div>
+                        <span class="text-lg font-bold block leading-tight font-cairo">منى سليمان حسن</span>
+                        <span class="text-xs text-gold-400 block font-light">باحث قانوني</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8 space-x-reverse font-medium text-sm">
+                    <a href="#about" class="hover:text-gold-400 transition-colors">نبذة عني</a>
+                    <a href="#experience" class="hover:text-gold-400 transition-colors">الخبرات المهنية</a>
+                    <a href="#skills" class="hover:text-gold-400 transition-colors">المهارات</a>
+                    <a href="#education" class="hover:text-gold-400 transition-colors">المؤهلات</a>
+                    <a href="#contact" class="hover:text-gold-400 transition-colors">تواصل معي</a>
+                </div>
+
+                <!-- Action Button & Mobile Toggle -->
+                <div class="flex items-center space-x-3 space-x-reverse">
+                    <button onclick="window.print()" class="bg-gold-500 hover:bg-gold-600 text-navy-950 font-semibold px-4 py-2 rounded-lg text-sm transition-all shadow-md flex items-center gap-2">
+                        <i class="fa-solid fa-print"></i>
+                        <span class="hidden sm:inline">طباعة / PDF</span>
+                    </button>
+                    
+                    <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white p-2">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-900 border-b border-slate-800 px-4 pt-2 pb-4 space-y-2">
+            <a href="#about" class="block px-3 py-2 rounded-md hover:bg-slate-800 text-slate-200">نبذة عني</a>
+            <a href="#experience" class="block px-3 py-2 rounded-md hover:bg-slate-800 text-slate-200">الخبرات المهنية</a>
+            <a href="#skills" class="block px-3 py-2 rounded-md hover:bg-slate-800 text-slate-200">المهارات</a>
+            <a href="#education" class="block px-3 py-2 rounded-md hover:bg-slate-800 text-slate-200">المؤهلات العلميّة</a>
+            <a href="#contact" class="block px-3 py-2 rounded-md hover:bg-slate-800 text-slate-200">تواصل معي</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-b from-navy-950 via-navy-900 to-slate-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fbbf24_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                <div class="md:col-span-8 text-center md:text-right space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs md:text-sm font-medium">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                        <span>باحث قانوني بمصلحة الميكانيكا والكهرباء</span>
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight font-cairo text-white leading-tight">
+                        الأستاذة / <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-amber-200">منى سليمان حسن</span>
+                    </h1>
+                    
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed font-light">
+                        باحث قانوني بالادارة العامة للتدريب - مصلحة الميكانيكا والكهرباء. متخصصة في الصياغة القانونية، إعداد اللوائح التنظيمية، متابعة الجوانب التشريعية والإدارية للبرامج التدريبية، ودراسة الرؤى القانونية وتطبيقها بكتفاءة ودقة عالية.
+                    </p>
+
+                    <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-4 no-print">
+                        <a href="#contact" class="bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold px-6 py-3 rounded-xl transition-all shadow-lg hover:shadow-gold-500/20 flex items-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>تواصل معي</span>
+                        </a>
+                        <a href="#experience" class="bg-slate-800 hover:bg-slate-700 text-white font-medium px-6 py-3 rounded-xl border border-slate-700 transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <span>الخبرات السابقة</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Avatar / Badge Icon Card -->
+                <div class="md:col-span-4 flex justify-center">
+                    <div class="relative w-48 h-48 sm:w-64 sm:h-64 rounded-2xl bg-gradient-to-tr from-gold-500/20 to-slate-800 border border-gold-500/30 p-4 flex flex-col items-center justify-center text-center shadow-2xl backdrop-blur-sm">
+                        <div class="w-24 h-24 rounded-full bg-navy-950 border-2 border-gold-400 flex items-center justify-center mb-4 text-gold-400 shadow-inner">
+                            <i class="fa-solid fa-user-shield text-4xl"></i>
+                        </div>
+                        <h3 class="font-cairo font-bold text-lg text-white">خبرة قانونية وإدارية</h3>
+                        <p class="text-xs text-slate-400 mt-1">مصلحة الميكانيكا والكهرباء</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Wrapper -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
+
+        <!-- About Me Section -->
+        <section id="about" class="scroll-mt-28">
+            <div class="bg-white rounded-2xl p-6 sm:p-10 shadow-sm border border-slate-200 print-border">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-3 h-8 bg-gold-500 rounded-full"></div>
+                    <h2 class="text-2xl sm:text-3xl font-bold font-cairo text-navy-950">نبذة تعريفية</h2>
+                </div>
+                <p class="text-slate-600 leading-loose text-base sm:text-lg">
+                    باحث قانوني متميز بالجمهورية العربية المصرية، أعمل حالياً بالإدارة العامة للتدريب بمصلحة الميكانيكا والكهرباء. تمتلك خبرة وافية في مراجعة العقود والقرارات الإدارية، إعداد وتطوير الأطر القانونية المنظمة للعمليات التدريبية، والعمل على تقديم الاستشارات القانونية الشاملة التي تضمن الامتثال الكامل للقوانين واللوائح المعمول بها في الجهاز الإداري للدولة.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 pt-6 border-t border-slate-100">
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 text-center">
+                        <i class="fa-solid fa-gavel text-gold-500 text-2xl mb-2"></i>
+                        <h4 class="font-bold text-navy-950">البحث والدراسات</h4>
+                        <p class="text-xs text-slate-500 mt-1">إعداد الآراء والدراسات القانونية الدقيقة</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 text-center">
+                        <i class="fa-solid fa-graduation-cap text-gold-500 text-2xl mb-2"></i>
+                        <h4 class="font-bold text-navy-950">التدريب والتطوير</h4>
+                        <p class="text-xs text-slate-500 mt-1">المشاركة في صياغة وتشغيل البرامج التدريبية</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 text-center">
+                        <i class="fa-solid fa-file-contract text-gold-500 text-2xl mb-2"></i>
+                        <h4 class="font-bold text-navy-950">الالتزام والحوكمة</h4>
+                        <p class="text-xs text-slate-500 mt-1">متابعة تطبيق القوانين واللوائح الإدارية</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="scroll-mt-28">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="w-3 h-8 bg-gold-500 rounded-full"></div>
+                <h2 class="text-2xl sm:text-3xl font-bold font-cairo text-navy-950">الخبرة المهنية</h2>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Timeline Item 1 -->
+                <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200 relative overflow-hidden print-border">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-slate-100 pb-4 mb-4 gap-2">
+                        <div>
+                            <h3 class="text-xl font-bold text-navy-950 font-cairo">باحث قانوني</h3>
+                            <p class="text-gold-600 font-semibold text-sm">الإدارة العامة للتدريب - مصلحة الميكانيكا والكهرباء</p>
+                        </div>
+                        <span class="inline-block px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-semibold w-fit">
+                            الوظيفة الحالية
+                        </span>
+                    </div>
+                    
+                    <ul class="space-y-3 text-slate-600 text-sm sm:text-base list-disc list-inside leading-relaxed">
+                        <li>مراجعة وإعداد الإطار القانوني واللوائح المنظمة للبرامج والندوات التدريبية بالمصلحة.</li>
+                        <li>تقديم الرأي والاستشارات القانونية بشأن المسائل الإدارية والتنظيمية في الإدارة العامة للتدريب.</li>
+                        <li>المشاركة في صياغة ومراجعة العقود والاتفاقيات الخاصة بمراكز التدريب والجهات المعنية.</li>
+                        <li>متابعة التحديثات التشريعية والقوانين الوظيفية والخدمة المدنية وتطبيقها بدقة داخل الادارة.</li>
+                        <li>إعداد التقارير والمذكرات القانونية الخاصة بموضوعات التدريب والعاملين.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="scroll-mt-28">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="w-3 h-8 bg-gold-500 rounded-full"></div>
+                <h2 class="text-2xl sm:text-3xl font-bold font-cairo text-navy-950">المهارات والخبرات</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Legal Competencies -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 print-border">
+                    <h3 class="text-lg font-bold text-navy-950 mb-4 flex items-center gap-2 font-cairo">
+                        <i class="fa-solid fa-scale-unbalanced-stroke text-gold-500"></i>
+                        المهارات القانونية والإدارية
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold mb-1">
+                                <span>الصياغة القانونية والمذكرات</span>
+                                <span class="text-gold-600">ممتاز</span>
+                            </div>
+                            <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                                <div class="bg-gold-500 h-full w-[95%]"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold mb-1">
+                                <span>قانون الخدمة المدنية واللوائح الإدارية</span>
+                                <span class="text-gold-600">ممتاز</span>
+                            </div>
+                            <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                                <div class="bg-gold-500 h-full w-[90%]"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold mb-1">
+                                <span>إعداد ودراسة عقود التدريب</span>
+                                <span class="text-gold-600">جيد جداً</span>
+                            </div>
+                            <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                                <div class="bg-gold-500 h-full w-[88%]"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold mb-1">
+                                <span>حل النزاعات والتسويات الإدارية</span>
+                                <span class="text-gold-600">ممتاز</span>
+                            </div>
+                            <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                                <div class="bg-gold-500 h-full w-[85%]"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personal & Technical Skills -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 print-border">
+                    <h3 class="text-lg font-bold text-navy-950 mb-4 flex items-center gap-2 font-cairo">
+                        <i class="fa-solid fa-brain text-gold-500"></i>
+                        المهارات الشخصية والتنظيمية
+                    </h3>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-sm font-medium text-slate-700 flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-gold-500"></i>
+                            التفكير التحليلي والناقد
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-sm font-medium text-slate-700 flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-gold-500"></i>
+                            التواصل الفعال والتفاوض
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-sm font-medium text-slate-700 flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-gold-500"></i>
+                            إدارة الوقت والتنظيم
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-sm font-medium text-slate-700 flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-gold-500"></i>
+                            العمل الجماعي والقيادة
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-sm font-medium text-slate-700 flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-gold-500"></i>
+                            الدقة والتأني في البحث
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-sm font-medium text-slate-700 flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-gold-500"></i>
+                            استخدام التطبيقات المكتبية
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Qualifications Section -->
+        <section id="education" class="scroll-mt-28">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="w-3 h-8 bg-gold-500 rounded-full"></div>
+                <h2 class="text-2xl sm:text-3xl font-bold font-cairo text-navy-950">المؤهلات العلمية والتدريب</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex items-start gap-4 print-border">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/10 text-gold-600 flex items-center justify-center shrink-0 text-xl font-bold">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-navy-950 font-cairo text-lg">ليسانس الحقوق</h3>
+                        <p class="text-slate-500 text-sm mt-1">إحدى الجامعات المصرية</p>
+                        <p class="text-xs text-slate-400 mt-2">دراسة متخصصة في القوانين العامة والخاصة والتشريعات الإدارية</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex items-start gap-4 print-border">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/10 text-gold-600 flex items-center justify-center shrink-0 text-xl font-bold">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-navy-950 font-cairo text-lg">دورات قانونية وإدارية متخصصة</h3>
+                        <p class="text-slate-500 text-sm mt-1">الإدارة العامة للتدريب</p>
+                        <p class="text-xs text-slate-400 mt-2">مجموعة من البرامج التدريبية المتقدمة في قانون الخدمة المدنية والبحث القانوني</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="scroll-mt-28 no-print">
+            <div class="bg-navy-950 rounded-3xl p-6 sm:p-10 text-white shadow-xl relative overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                    
+                    <!-- Contact Info -->
+                    <div class="md:col-span-5 space-y-6">
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl font-bold font-cairo text-white">تواصل معي</h2>
+                            <p class="text-slate-400 text-sm mt-2">يمكنكم التواصل لبحث الاستشارات والعمل القانوني والإداري</p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-slate-800 text-gold-400 flex items-center justify-center">
+                                    <i class="fa-solid fa-building"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-slate-400 block">جهة العمل</span>
+                                    <span class="text-sm font-medium text-slate-200">الإدارة العامة للتدريب - مصلحة الميكانيكا والكهرباء</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-slate-800 text-gold-400 flex items-center justify-center">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-slate-400 block">البريد الإلكتروني</span>
+                                    <span class="text-sm font-medium text-slate-200">mona.soliman@example.com</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-slate-800 text-gold-400 flex items-center justify-center">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-slate-400 block">العنوان</span>
+                                    <span class="text-sm font-medium text-slate-200">جمهورية مصر العربية</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="md:col-span-7 bg-slate-900/80 p-6 rounded-2xl border border-slate-800">
+                        <form id="contactForm" class="space-y-4" onsubmit="handleFormSubmit(event)">
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">الاسم بالكامل</label>
+                                <input type="text" required class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold-500 transition-colors" placeholder="أدخل اسمك الكريم">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">البريد الإلكتروني</label>
+                                <input type="email" required class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold-500 transition-colors" placeholder="example@domain.com">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">نص الرسالة</label>
+                                <textarea rows="3" required class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold-500 transition-colors" placeholder="اكتب رسالتك هنا..."></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold py-3 rounded-lg text-sm transition-all shadow-md">
+                                إرسال الرسالة
+                            </button>
+                        </form>
+                        <div id="formSuccess" class="hidden text-center p-4 bg-emerald-500/10 text-emerald-400 rounded-lg text-sm mt-4">
+                            تم إرسال الرسالة بنجاح، شكراً لتواصلك!
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 border-t border-slate-800 text-slate-400 py-8 no-print">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-sm">جميع الحقوق محفوظة &copy; <span id="year"></span> | أستاذة منى سليمان حسن</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Dynamic Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Contact Form Submission Mock
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const form = document.getElementById('contactForm');
+            const success = document.getElementById('formSuccess');
+            
+            form.reset();
+            form.classList.add('hidden');
+            success.classList.remove('hidden');
+
+            setTimeout(() => {
+                form.classList.remove('hidden');
+                success.classList.add('hidden');
+            }, 5000);
+        }
+    </script>
+
+</body>
+</html>
